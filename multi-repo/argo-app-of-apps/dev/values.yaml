@@ -12,7 +12,7 @@ spec:
   apps:
     ecsdemoFrontend:
       project: default
-      createProject: true
+      # createProject: true
       #repoURL: git@github.com:aws-containers/ecsdemo-frontend.git
       repoURL: https://github.com/aws-containers/ecsdemo-frontend.git
       targetRevision: main
@@ -33,7 +33,7 @@ spec:
                     pathType: Prefix
     ecsdemoNodejs:
       project: default
-      createProject: true
+      # createProject: true
       repoURL: https://github.com/aws-containers/ecsdemo-nodejs.git
       #repoURL: git@github.com:aws-containers/ecsdemo-nodejs.git
       targetRevision: main
@@ -44,7 +44,7 @@ spec:
           value: '3'
     ecsdemoCrystal:
       project: default
-      createProject: true
+      # createProject: true
       repoURL: https://github.com/aws-containers/ecsdemo-crystal.git
       #repoURL: git@github.com:aws-containers/ecsdemo-crystal.git
       targetRevision: main
