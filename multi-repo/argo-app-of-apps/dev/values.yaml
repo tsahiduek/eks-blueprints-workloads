@@ -11,6 +11,7 @@ spec:
 # All helm parameters can be sent by IaC code (Terraform or CDK)
   apps:
     ecsdemoFrontend:
+      project: default
       createProject: true
       #repoURL: git@github.com:aws-containers/ecsdemo-frontend.git
       repoURL: https://github.com/aws-containers/ecsdemo-frontend.git
@@ -31,6 +32,7 @@ spec:
                   - path: /
                     pathType: Prefix
     ecsdemoNodejs:
+      project: default
       createProject: true
       repoURL: https://github.com/aws-containers/ecsdemo-nodejs.git
       #repoURL: git@github.com:aws-containers/ecsdemo-nodejs.git
@@ -41,6 +43,7 @@ spec:
         - name: replicaCount
           value: '3'
     ecsdemoCrystal:
+      project: default
       createProject: true
       repoURL: https://github.com/aws-containers/ecsdemo-crystal.git
       #repoURL: git@github.com:aws-containers/ecsdemo-crystal.git
